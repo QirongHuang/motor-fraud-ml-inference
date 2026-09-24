@@ -42,5 +42,7 @@ if __name__ == "__main__":
     sample = pd.read_csv("data/sample_inference.csv")
 
     predictions = predict_fraud(sample)
-
-    print(predictions.head())
+    print(f"Loaded {len(sample)} observations.")
+    print(f"Using {len(FEATURES)} model features.")
+    print("\nPredictions:")
+    print(predictions)
